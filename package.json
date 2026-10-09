@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-prospeo",
+  "version": "0.1.0",
+  "description": "Prospeo MCP — wraps the Prospeo 'Enrich Person' API (prospeo.io)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-prospeo": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "prospeo"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-prospeo.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-d4c0f033f474e7010d9ede80de46b24ba799d7425e0a4e6ce3f34d53e4e11711",
+    "sourceCommit": "3d8d9f09e39ebb175a9e41fffd8601eeddcf10a4"
+  }
+}
