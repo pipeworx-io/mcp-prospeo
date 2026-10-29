@@ -1,0 +1,36 @@
+[
+  {
+    "name": "prospeo_find_email",
+    "description": "Find a person's verified work email by first name, last name and company domain, via Prospeo's person-enrichment API. Returns the email only when Prospeo actually reveals and verifies it — a masked/unrevealed guess is reported as not found rather than handed back as an address. Example: prospeo_find_email({ first_name: \"Patrick\", last_name: \"Collison\", domain: \"stripe.com\", _apiKey: \"your-prospeo-key\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "first_name": {
+          "type": "string",
+          "description": "Person's first name, e.g. \"Patrick\""
+        },
+        "last_name": {
+          "type": "string",
+          "description": "Person's last name, e.g. \"Collison\""
+        },
+        "domain": {
+          "type": "string",
+          "description": "Company website/domain, no protocol, e.g. \"stripe.com\""
+        },
+        "company_name": {
+          "type": "string",
+          "description": "Optional company name, used if Prospeo cannot resolve from the domain alone."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Your Prospeo API key (get one at app.prospeo.io/api)."
+        }
+      },
+      "required": [
+        "first_name",
+        "last_name",
+        "domain"
+      ]
+    }
+  }
+]
