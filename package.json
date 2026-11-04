@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-prospeo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Prospeo MCP — wraps the Prospeo 'Enrich Person' API (prospeo.io)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "prospeo",
     "gatewaySlug": "prospeo",
-    "sourceHash": "v1-b40d364af67300a74bd96bc54ffd777fb971419d48db61c8dd0601838c2e3b42",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-57c19181c817bb2b991782f7c370531ed9ec3a4d67bd319b328a235ec0002a1a",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
